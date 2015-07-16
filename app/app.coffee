@@ -15,12 +15,12 @@ router.get '/api/req/:interval',
     )
 
 app
-	.use '/styles', express.static("#{__dirname}/public/styles")
-	.use '/scripts', express.static("#{__dirname}/public/scripts")
-	.use '/fonts', express.static("#{__dirname}/public/fonts")
-	.use '/templates', express.static("#{__dirname}/public/templates")
-	.use '/bower_components', express.static("#{__dirname}/bower_components")
-	.use router
+  .use '/styles', express.static("#{__dirname}/public/styles")
+  .use '/scripts', express.static("#{__dirname}/public/scripts")
+  .use '/fonts', express.static("#{__dirname}/public/fonts")
+  .use '/templates', express.static("#{__dirname}/public/templates")
+  .use '/bower_components', express.static("#{__dirname}/bower_components")
+  .use router
 	
 app.get '/',
   (req, res) ->
