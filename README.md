@@ -9,5 +9,6 @@ That means you're in a testing repo, and you're actually going to do stuff, whic
 * Checkout
 * run npm install
 * run bower install
+* run npm start
 * ???
 * profit
