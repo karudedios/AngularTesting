@@ -48,12 +48,15 @@ module.exports = (grunt) ->
 				ext: '.html'
 		
 		watch:
+			coffee_app:
+				files: ['app/app.coffee']
+				tasks: ['coffee:main']	
 			less:
 				files: ['private/styles/*.less']
 				tasks: ['less']
 			coffee:
-				files: ['private/scripts/*.coffee', 'app/app.coffee']
-				tasks: ['coffee']
+				files: ['private/scripts/*.coffee']
+				tasks: ['coffee:app']
 			jade:
 				files: ['private/templates/*.jade']
 				tasks: ['jade']

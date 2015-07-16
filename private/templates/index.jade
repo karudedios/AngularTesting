@@ -1,2 +1,14 @@
 doctype html
-div(ui-view)
+html(data-ng-app='app')
+	head
+		title(data-ng-bind='title')
+		link(rel='stylesheet' href='/styles/app.css')
+	body
+		div(data-ng-show='rootLoading' data-ng-bind="::'Loading...'")
+		div(data-ng-hide='rootLoading' data-ui-view)
+		
+		script(src='/bower_components/angular/angular.js')
+		script(src='/bower_components/angular-resource/angular-resource.js')
+		script(src='/bower_components/angular-ui/build/angular-ui.js')
+		script(src='/bower_components/angular-ui-router/release/angular-ui-router.js')
+		script(src='/scripts/app.js')
