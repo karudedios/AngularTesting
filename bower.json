@@ -1,0 +1,32 @@
+{
+  "name": "AngularJs-TestBox",
+  "version": "0.0.0",
+  "homepage": "https://github.com/karudedios/AngularTesting",
+  "authors": [
+    "c.dedios <c.dedios@outlook.com>"
+  ],
+  "main": "app.coffee",
+  "keywords": [
+    "Angular",
+    "CoffeeScript",
+    "Grunt",
+    "Bower",
+    "Nde",
+    "Express",
+    "Bootstrap",
+    "Angular-UI"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui": "~0.4.0",
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5"
+  }
+}
